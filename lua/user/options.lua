@@ -1,5 +1,3 @@
-vim.g.mapleader = ","
-
 vim.opt.linebreak = true
 vim.opt.foldenable = false
 vim.opt.wrap = false
@@ -13,4 +11,3 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.breakindent = true
 vim.opt.cursorline = true
-
