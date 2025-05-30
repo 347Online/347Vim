@@ -4,7 +4,7 @@ vim.g.vimwiki_list = {
   {
     syntax = "markdown",
     ext = "md",
-    path = "~/Sync/Notes/wiki/",
+    path = "~/Sync/Notes/",
   }
 }
 vim.g.vimwiki_key_mappings = {
