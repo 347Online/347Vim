@@ -7,5 +7,8 @@ vim.g.vimwiki_list = {
     path = "~/Sync/Notes/wiki/",
   }
 }
+vim.g.vimwiki_key_mappings = {
+  headers = 0
+}
 
 return { "vimwiki/vimwiki" }
