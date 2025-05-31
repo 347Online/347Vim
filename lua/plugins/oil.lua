@@ -1,7 +1,5 @@
 return {
 	"stevearc/oil.nvim",
-	---@module 'oil'
-	---@type oil.SetupOpts
 	opts = {
 		view_options = {
 			show_hidden = true,
@@ -11,6 +9,8 @@ return {
 					or string.match(name, "^node_modules$")
 					or string.match(name, "^%.%.$")
 					or string.match(name, "^%.stfolder$")
+					or string.match(name, "^%.DS_Store$")
+					or string.match(name, "^%.obsidian$")
 				then
 					return true
 				end
