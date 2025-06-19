@@ -9,19 +9,20 @@ return {
 		lspconfig.eslint.setup({
 			settings = { useFlatConfig = true },
 		})
+		local flakeExpr = '(builtins.getFlake "' .. vim.fn.expand("$HOME/347OS") .. '")'
 		lspconfig.nixd.setup({
 			nixd = {
 				formatting = { command = { "nixfmt" } },
 				nixpkgs = { expr = "import <nixpkgs> { }" },
 				options = {
 					darwin = {
-						expr = '(builtins.getFlake "/Users/katie/347OS").darwinConfigurations.Athena.options',
+						expr = flakeExpr .. ".darwinConfigurations.Athena.options",
 					},
 					nixos = {
-						expr = '(builtins.getFlake "/Users/katie/347OS").nixosConfigurations.Aspen.options',
+						expr = flakeExpr .. ".nixosConfigurations.Aspen.options",
 					},
 					user = {
-						expr = '(builtins.getFlake "/Users/katie/347OS").packages.aarch64-darwin.homeConfigurations.katie.options',
+						expr = flakeExpr .. ".packages.aarch64-darwin.homeConfigurations.katie.options",
 					},
 				},
 			},
