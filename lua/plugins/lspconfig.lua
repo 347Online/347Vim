@@ -4,8 +4,8 @@ return {
 	config = function()
 		local lspconfig = require("lspconfig")
 		lspconfig.lua_ls.setup({})
-		lspconfig.ts_ls.setup({})
 		lspconfig.taplo.setup({})
+		lspconfig.ts_ls.setup({})
 		lspconfig.eslint.setup({
 			settings = { useFlatConfig = true },
 		})
