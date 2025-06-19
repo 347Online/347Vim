@@ -24,5 +24,6 @@
   "tinted-vim": { "branch": "main", "commit": "f3972c6484036dd191a6e1b591786b0c2f98e0a5" },
   "tsc.nvim": { "branch": "main", "commit": "8c1b4ec6a48d038a79ced8674cb15e7db6dd8ef0" },
   "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
+  "vim-jinja": { "branch": "master", "commit": "7c54e2320c5f676636cdd8697480782eebfb2bf2" },
   "wiki.vim": { "branch": "master", "commit": "52e1abfaa87a61f624ec59ee51ed1fe9ea43986d" }
 }
