@@ -6,12 +6,12 @@ vim.keymap.set("n", "-", ":Oil<CR>")
 -- vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>") -- see plugins/lazygit.lua:keys
 vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
 
-vim.keymap.set("n", "<C-w>d", ":Lspsaga show_buf_diagnostics<CR>", { silent = true })
-vim.keymap.set("n", "K", ":Lspsaga hover_doc<CR>", { silent = true })
-vim.keymap.set("n", "gra", ":Lspsaga code_action<CR>", { silent = true })
-vim.keymap.set("n", "grn", ":Lspsaga rename<CR>", {})
-vim.keymap.set("n", "gd", ":Lspsaga goto_definition<CR>", {})
-vim.keymap.set("n", "gt", ":Lspsaga goto_type_definition<CR>", {})
+-- vim.keymap.set("n", "<C-w>d", ":LspUI show_buf_diagnostics<CR>", { silent = true })
+-- vim.keymap.set("n", "K", ":LspUI hover<CR>", { silent = true })
+-- vim.keymap.set("n", "gra", ":LspUI code_action<CR>", { silent = true })
+-- vim.keymap.set("n", "grn", ":LspUI rename<CR>", {})
+-- vim.keymap.set("n", "gd", ":LspUI definition<CR>", {})
+-- vim.keymap.set("n", "gt", ":LspUI type_definition<CR>", {})
 
 vim.keymap.set("n", "<leader>f?", ":Telescope<CR>", {})
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {})
