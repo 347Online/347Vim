@@ -3,9 +3,12 @@ return {
 	dependencies = { "nvimdev/lspsaga.nvim" },
 	config = function()
 		local lspconfig = require("lspconfig")
+		lspconfig.bashls.setup({})
 		lspconfig.lua_ls.setup({})
+		lspconfig.sqls.setup({})
 		lspconfig.taplo.setup({})
 		lspconfig.ts_ls.setup({})
+
 		lspconfig.eslint.setup({
 			settings = { useFlatConfig = true },
 		})
@@ -27,6 +30,7 @@ return {
 				},
 			},
 		})
+
 		lspconfig.rust_analyzer.setup({
 			settings = {
 				["rust-analyzer"] = {

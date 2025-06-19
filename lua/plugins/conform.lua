@@ -26,7 +26,6 @@ return {
 			end
 
 			return {
-				timeout_ms = 750,
 				lsp_fallback = true,
 			}
 		end,
@@ -43,8 +42,14 @@ return {
 			typescript = { "prettierd", "eslint_d" },
 			typescriptreact = { "prettierd", "eslint_d" },
 
+			sh = { "shfmt", "shellcheck" },
+			bash = { "shfmt", "shellcheck" },
+			zsh = { "shfmt", "shellcheck" },
+
 			lua = { "stylua" },
 			nix = { "nixfmt" },
+			sql = { "sqlfluff" },
+			terraform = { "terraform_fmt" },
 			yaml = { "yamllint", "yamlfmt" },
 		},
 	},
