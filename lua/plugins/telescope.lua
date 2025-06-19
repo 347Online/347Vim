@@ -2,10 +2,12 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
-		dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
-	},
-	{
-		"nvim-telescope/telescope-ui-select.nvim",
+		dependencies = {
+			"gbrlsnchs/telescope-lsp-handlers.nvim",
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope-ui-select.nvim",
+			"nvim-tree/nvim-web-devicons",
+		},
 		config = function()
 			require("telescope").setup({
 				pickers = {
@@ -24,6 +26,7 @@ return {
 				},
 			})
 			require("telescope").load_extension("ui-select")
+			require("telescope").load_extension("lsp_handlers")
 		end,
 	},
 }
