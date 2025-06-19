@@ -31,7 +31,9 @@ return {
 		end,
 
 		formatters_by_ft = {
-			html = { "prettierd" },
+			html = { "djlint" },
+			jinja = { "djlint" },
+
 			css = { "prettierd" },
 			-- markdown = {"prettierd"},
 

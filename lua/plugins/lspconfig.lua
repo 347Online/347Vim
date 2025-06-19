@@ -4,6 +4,7 @@ return {
 	config = function()
 		local lspconfig = require("lspconfig")
 		lspconfig.bashls.setup({})
+		lspconfig.jinja_lsp.setup({})
 		lspconfig.lua_ls.setup({})
 		lspconfig.sqls.setup({})
 		lspconfig.taplo.setup({})
