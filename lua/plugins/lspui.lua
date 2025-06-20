@@ -1,9 +1,8 @@
 return {
 	"jinzhongjia/LspUI.nvim",
 	branch = "main",
-	config = function()
-		require("LspUI").setup({
-			-- config options go here
-		})
-	end,
+	opts = {
+		lightbulb = { enable = false },
+		inlay_hint = { enable = false },
+	},
 }
