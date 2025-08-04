@@ -7,12 +7,11 @@ vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>") -- see plugins/lazygit.lua:key
 vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
 
 vim.keymap.set("n", "K", ":LspUI hover<CR>", { silent = true })
-vim.keymap.set("n", "gra", ":LspUI code_action<CR>", { silent = true })
 vim.keymap.set("n", "grn", ":LspUI rename<CR>", {})
 vim.keymap.set("n", "gd", ":LspUI definition<CR>", {})
 vim.keymap.set("n", "gt", ":LspUI type_definition<CR>", {})
-vim.keymap.set("n", "gi", "<cmd>LspUI implementation<CR>")
-vim.keymap.set("n", "gr", "<cmd>LspUI reference<CR>")
+vim.keymap.set("n", "gi", ":LspUI implementation<CR>")
+vim.keymap.set("n", "gr", ":LspUI reference<CR>")
 
 vim.keymap.set("n", "<leader>f?", ":Telescope<CR>", {})
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {})
