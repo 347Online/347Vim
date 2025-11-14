@@ -94,6 +94,35 @@
           # this includes LSPs
           lspsAndRuntimeDeps = {
             general = with pkgs; [
+              # Language Servers
+              bash-language-server
+              jinja-lsp
+              lua-language-server
+              nixd
+              sqls
+              taplo-lsp
+              typescript-language-server
+              vscode-langservers-extracted
+
+              # Formatters
+              (pkgs.mdformat.withPlugins (
+                ps: with ps; [
+                  mdformat-beautysh
+                  mdformat-footnote
+                  mdformat-frontmatter
+                  mdformat-tables
+                  # mdformat-toc
+                ]
+              ))
+              djlint
+              eslint_d
+              prettierd
+              shellcheck
+              shfmt
+              sqlfluff
+              stylua
+              yamlfmt
+              yamllint
             ];
           };
 
