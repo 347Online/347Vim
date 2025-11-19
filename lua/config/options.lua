@@ -11,3 +11,4 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.breakindent = true
 vim.opt.cursorline = true
+vim.opt.exrc = true
