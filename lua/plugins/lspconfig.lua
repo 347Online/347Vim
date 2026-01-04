@@ -3,8 +3,11 @@ return {
 	dependencies = { "nvimdev/lspsaga.nvim" },
 	config = function()
 		vim.lsp.enable("bashls")
+		vim.lsp.enable("eslint")
 		vim.lsp.enable("jinja_lsp")
 		vim.lsp.enable("lua_ls")
+		vim.lsp.enable("nixd")
+		vim.lsp.enable("rust_analyzer")
 		vim.lsp.enable("sqls")
 		vim.lsp.enable("taplo")
 		vim.lsp.enable("ts_ls")
