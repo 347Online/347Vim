@@ -1,13 +1,14 @@
 local ensureInstalled = {
 	"bash",
+	"css",
+	"html",
 	"javascript",
 	"json",
 	"lua",
+	"nix",
 	"rust",
 	"tsx",
 	"typescript",
-	"css",
-	"html",
 	"yaml",
 }
 
