@@ -6,8 +6,9 @@ require("config.options")
 require("config.keymaps")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight yanked region",
 	callback = function()
-		vim.highlight.on_yank()
+		vim.hl.hl_op()
 	end,
 })
 
